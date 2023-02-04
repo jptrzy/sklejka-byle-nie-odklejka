@@ -7,6 +7,7 @@
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 3, 6 )
+speed = 50
 
 [node name="Relation Sprite" type="Sprite" parent="."]
 position = Vector2( -28, 87 )

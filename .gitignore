@@ -1,4 +1,7 @@
 
+# SBNO-specific ignores 
+addons/
+
 # Godot-specific ignores
 .import/
 export.cfg

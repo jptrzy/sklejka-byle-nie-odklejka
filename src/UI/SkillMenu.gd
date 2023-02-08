@@ -3,8 +3,8 @@ extends Node2D
 var is_paused = false setget set_is_paused
 
 
-func _unhandled_input(event):
-	if event.is_action_pressed("pause"):
+func _unhandled_input(value):
+	if value.is_action_pressed("SkillMenu"):
 		self.is_paused = !is_paused
 
 		
@@ -21,5 +21,4 @@ export var MainGameScene : PackedScene
 func _on_Play_pressed():
 	self.is_paused = false
 
-func _on_Quit_pressed():
-	get_tree().quit()
+

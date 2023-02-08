@@ -12,11 +12,11 @@ func set_is_paused(value):
 	visible = is_paused
 
 export var MainGameScene : PackedScene
-
+	
 
 
 func _on_Play_pressed():
-	get_tree().change_scene(MainGameScene.resource_path)
+	self.is_paused = false
 
 func _on_Quit_pressed():
 	get_tree().quit()

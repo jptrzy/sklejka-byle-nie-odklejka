@@ -34,6 +34,7 @@ corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [node name="PauseMenu" type="Node2D"]
+pause_mode = 2
 visible = false
 script = ExtResource( 2 )
 

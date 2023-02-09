@@ -9,4 +9,3 @@
 
 [node name="SkillMenu" parent="." instance=ExtResource( 2 )]
 pause_mode = 2
-visible = false

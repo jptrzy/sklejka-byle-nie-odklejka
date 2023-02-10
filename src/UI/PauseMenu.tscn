@@ -1,16 +1,16 @@
 [gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://alagard.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://src/PauseMenu.gd" type="Script" id=2]
-[ext_resource path="res://Bisterndemo-PKlBZ.otf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
 outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 30
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.607843, 0.607843, 0.607843, 1 )

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/textures/debug/player.png" type="Texture" id=2]
+[ext_resource path="res://src/UI/GUI.tscn" type="PackedScene" id=3]
 
 [node name="DebugLevel" type="Node2D"]
 
@@ -12,3 +13,5 @@ speed = 50
 [node name="Relation Sprite" type="Sprite" parent="."]
 position = Vector2( -28, 87 )
 texture = ExtResource( 2 )
+
+[node name="GUI" parent="." instance=ExtResource( 3 )]

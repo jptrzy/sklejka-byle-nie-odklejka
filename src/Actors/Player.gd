@@ -1,4 +1,5 @@
 extends Actor
+class_name Player
 
 export (int) var move_speed = 100
 

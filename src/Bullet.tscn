@@ -16,3 +16,5 @@ shape = SubResource( 1 )
 
 [node name="Bullets" type="Sprite" parent="."]
 texture = ExtResource( 2 )
+
+[connection signal="body_entered" from="." to="." method="_on_Bullet_body_entered"]

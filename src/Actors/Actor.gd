@@ -17,7 +17,17 @@ export (int) var strength = 1
 export (int) var intelligence = 1
 export (int) var speed = 1
 
+export (int) var max_health = 1;
+export (int) var health;
+
+"""
+Movemenet
+"""
+
 var velocity = Vector2.ZERO
+
+func _init() -> void:
+	health = max_health;
 
 func _physics_process(delta):
 	velocity = move_and_slide(velocity)

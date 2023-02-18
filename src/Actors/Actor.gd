@@ -17,10 +17,28 @@ export (int) var strength = 1
 export (int) var intelligence = 1
 export (int) var speed = 1
 
+export (int) var max_health = 1;
+var health;
+
+"""
+Movemenet
+"""
+
 var velocity = Vector2.ZERO
 
-func _physics_process(delta):
+func _ready() -> void:
+	health = max_health;
+
+func _physics_process(delta) -> void:
 	velocity = move_and_slide(velocity)
+
+func take_damage(damage: int) -> void:
+	health -= damage;
+	
+	if 0 >= health: on_death()
+
+func on_death() -> void:
+	print("TODO on death")
 
 """
 _get_property_list() don't work propertly for now,

@@ -24,6 +24,10 @@ config/name="Sklejka byle nie Odklejka"
 run/main_scene="res://src/UI/StartMenu.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [editor_plugins]
 
 enabled=PoolStringArray(  )

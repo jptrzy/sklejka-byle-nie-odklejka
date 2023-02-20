@@ -26,4 +26,4 @@ func _on_Quit_pressed():
 
 
 func _on_Credits_pressed():
-	get_tree().change_scene("res://src/UI/Settings.tscn")
+	get_tree().change_scene("res://src/UI/SettingsMenu.tscn")

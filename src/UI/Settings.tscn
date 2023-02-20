@@ -1,58 +1,11 @@
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://alagard.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://src/UI/Settings.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 30
-font_data = ExtResource( 1 )
-
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0.392157, 0.392157, 0.392157, 1 )
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-
-[sub_resource type="StyleBoxFlat" id=7]
-bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-
-[sub_resource type="StyleBoxFlat" id=4]
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-
-[sub_resource type="DynamicFont" id=5]
-size = 30
-font_data = ExtResource( 1 )
-
-[sub_resource type="StyleBoxFlat" id=10]
-bg_color = Color( 0.392157, 0.392157, 0.392157, 1 )
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-
-[sub_resource type="StyleBoxFlat" id=11]
-bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-
-[sub_resource type="StyleBoxFlat" id=8]
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-
-[sub_resource type="DynamicFont" id=6]
-size = 30
-font_data = ExtResource( 1 )
-
-[sub_resource type="StyleBoxFlat" id=12]
-bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-
-[sub_resource type="StyleBoxFlat" id=9]
-corner_radius_top_right = 15
+@ -41,84 +42,85 @@
 corner_radius_bottom_right = 15
 
 [node name="Node2D" type="Node2D"]
@@ -95,16 +48,16 @@ margin_right = 114.0
 margin_bottom = 600.0
 size_flags_horizontal = 2
 size_flags_vertical = 3
-custom_constants/separation = 30
+custom_constants/separation = 15
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
 margin_right = 114.0
-margin_bottom = 79.0
+margin_bottom = 89.0
 size_flags_vertical = 3
 
 [node name="Audio" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer"]
 margin_right = 114.0
-margin_bottom = 79.0
+margin_bottom = 89.0
 focus_mode = 0
 custom_fonts/font = SubResource( 2 )
 custom_styles/hover = SubResource( 3 )
@@ -113,31 +66,27 @@ custom_styles/normal = SubResource( 4 )
 text = "Audio"
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
-margin_top = 109.0
+margin_top = 104.0
 margin_right = 114.0
-margin_bottom = 188.0
+margin_bottom = 193.0
 size_flags_vertical = 3
 
 [node name="Video" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer2"]
 margin_right = 114.0
-margin_bottom = 79.0
-focus_mode = 0
+margin_bottom = 89.0
 custom_fonts/font = SubResource( 5 )
-custom_styles/hover = SubResource( 10 )
-custom_styles/pressed = SubResource( 11 )
 custom_styles/normal = SubResource( 8 )
 text = "Video"
 
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
-margin_top = 218.0
+margin_top = 208.0
 margin_right = 114.0
 margin_bottom = 298.0
 size_flags_vertical = 3
 
 [node name="Controls" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer3"]
 margin_right = 114.0
-margin_bottom = 80.0
+margin_bottom = 90.0
 custom_fonts/font = SubResource( 6 )
-custom_styles/pressed = SubResource( 12 )
 custom_styles/normal = SubResource( 9 )
 text = "Controls"

@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://alagard.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/UI/Settings.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -41,6 +42,7 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 1024.0

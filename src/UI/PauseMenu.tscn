@@ -40,7 +40,7 @@ script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 1024.0
-margin_bottom = 599.0
+margin_bottom = 600.0
 color = Color( 0.0941176, 0.00392157, 0.00392157, 1 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -58,9 +58,9 @@ margin_right = 924.0
 margin_bottom = 500.0
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-margin_top = 69.0
+margin_top = 70.0
 margin_right = 824.0
-margin_bottom = 129.0
+margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 6
 custom_colors/font_color = Color( 0.427451, 0, 0, 1 )

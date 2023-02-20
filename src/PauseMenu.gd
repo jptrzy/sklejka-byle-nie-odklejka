@@ -16,8 +16,7 @@ func set_is_paused(value):
 
 export var MainGameScene : PackedScene
 	
-func _on_Credits_pressed():
-	get_tree().change_scene("res://src/UI/Settings.tscn")
+
 
 func _on_Play_pressed():
 	self.is_paused = false
@@ -26,4 +25,5 @@ func _on_Quit_pressed():
 	get_tree().quit()
 
 
-
+func _on_Credits_pressed():
+	get_tree().change_scene("res://src/UI/Settings.tscn")

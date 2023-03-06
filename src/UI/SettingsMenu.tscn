@@ -35,10 +35,8 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Button" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
-margin_left = 10.0
-margin_top = 10.0
-margin_right = 50.0
-margin_bottom = 50.0
+margin_right = 30.0
+margin_bottom = 37.0
 focus_mode = 0
 size_flags_horizontal = 2
 custom_fonts/font = SubResource( 2 )
@@ -66,3 +64,24 @@ size_flags_vertical = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
 margin_right = 1024.0
+
+[node name="Button" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 4.0
+margin_right = 1024.0
+margin_bottom = 92.0
+size_flags_vertical = 3
+text = "Audio"
+
+[node name="Button2" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 96.0
+margin_right = 1024.0
+margin_bottom = 185.0
+size_flags_vertical = 3
+text = "Video"
+
+[node name="Button3" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 189.0
+margin_right = 1024.0
+margin_bottom = 278.0
+size_flags_vertical = 3
+text = "Huj"

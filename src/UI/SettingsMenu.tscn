@@ -85,3 +85,5 @@ margin_right = 1024.0
 margin_bottom = 278.0
 size_flags_vertical = 3
 text = "Huj"
+
+[connection signal="pressed" from="ColorRect/MarginContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

@@ -1,31 +1,16 @@
 extends Actor
-class_name Player
 
 export (int) var move_speed = 100
 
-export (PackedScene) var bullet_scene;
 
-export (float) var seconds_per_shoot = 0.1;
-var time_to_shoot := .0;
+"""
+TO DISCUSS
 
-func _process(delta: float) -> void:
-	var direction = Vector2.ZERO
-	
-	direction.x = Input.get_action_strength("shoot_right") - Input.get_action_strength("shoot_left")
-	direction.y = Input.get_action_strength("shoot_down") - Input.get_action_strength("shoot_up")
-	
-	if time_to_shoot > 0:
-		time_to_shoot -= delta;
-		return;
-	
-	if direction != Vector2.ZERO:
-		var bullet = bullet_scene.instance();
+When player move diagonally it dosn't feel natural;
+also move faster then when he is moving horizontaly or verticaly.
 
-		bullet.transform = transform;
-		bullet.move_direction = direction;
-		owner.add_child(bullet)
-		
-		time_to_shoot = seconds_per_shoot;
+We could repair it by basing your movement on circle and not a square.
+"""
 
 func _physics_process(delta):
 	var direction = Vector2.ZERO

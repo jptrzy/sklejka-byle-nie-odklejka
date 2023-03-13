@@ -14,15 +14,15 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/Actors/Actor.gd"
 }, {
+"base": "Enemy",
+"class": "Bomber",
+"language": "GDScript",
+"path": "res://src/Actors/Enemy/Bomber.gd"
+}, {
 "base": "Actor",
 "class": "Enemy",
 "language": "GDScript",
 "path": "res://src/Actors/Enemy/Enemy.gd"
-}, {
-"base": "",
-"class": "GitAPI",
-"language": "NativeScript",
-"path": "res://addons/godot-git-plugin/git_api.gdns"
 }, {
 "base": "Actor",
 "class": "Player",
@@ -31,8 +31,8 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Actor": "",
+"Bomber": "",
 "Enemy": "",
-"GitAPI": "",
 "Player": ""
 }
 

@@ -15,7 +15,7 @@ func shoot() -> void:
 
 
 func _on_SnipeTimer_timeout():
-	if(position.distance_to(player.position)<100):
+	if(position.distance_to(player.position)<70):
 		speeeed = 30
 	else:
 		speeeed = 0

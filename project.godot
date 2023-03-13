@@ -28,12 +28,18 @@ _global_script_classes=[ {
 "class": "Player",
 "language": "GDScript",
 "path": "res://src/Actors/Player.gd"
+}, {
+"base": "Enemy",
+"class": "Sniper",
+"language": "GDScript",
+"path": "res://src/Actors/Enemy/Sniper.gd"
 } ]
 _global_script_class_icons={
 "Actor": "",
 "Bomber": "",
 "Enemy": "",
-"Player": ""
+"Player": "",
+"Sniper": ""
 }
 
 [application]

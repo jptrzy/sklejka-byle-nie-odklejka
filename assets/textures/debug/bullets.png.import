@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nowe.png-3769f3e70e45ae547170f3cd0b2be075.stex"
+path="res://.import/bullets.png-8ff14898a428a60998ce9f72ef2ce5e2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/debug/nowe.png"
-dest_files=[ "res://.import/nowe.png-3769f3e70e45ae547170f3cd0b2be075.stex" ]
+source_file="res://assets/textures/debug/bullets.png"
+dest_files=[ "res://.import/bullets.png-8ff14898a428a60998ce9f72ef2ce5e2.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

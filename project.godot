@@ -13,11 +13,6 @@ _global_script_classes=[ {
 "class": "Actor",
 "language": "GDScript",
 "path": "res://src/Actors/Actor.gd"
-
-} ]
-_global_script_class_icons={
-"Actor": ""
-
 }, {
 "base": "Enemy",
 "class": "Bomber",
@@ -29,16 +24,6 @@ _global_script_class_icons={
 "language": "GDScript",
 "path": "res://src/Actors/Enemy/Dasher.gd"
 }, {
-"base": "Actor",
-"class": "Enemy",
-"language": "GDScript",
-"path": "res://src/Actors/Enemy/Enemy.gd"
-}, {
-"base": "Actor",
-"class": "Player",
-"language": "GDScript",
-"path": "res://src/Actors/Player.gd"
-}, {
 "base": "Enemy",
 "class": "Sniper",
 "language": "GDScript",
@@ -48,10 +33,7 @@ _global_script_class_icons={
 "Actor": "",
 "Bomber": "",
 "Dasher": "",
-"Enemy": "",
-"Player": "",
 "Sniper": ""
-
 }
 
 [application]
@@ -126,3 +108,14 @@ common/enable_pause_aware_picking=true
 [rendering]
 
 environment/default_environment="res://default_env.tres"
+
+[res:]
+
+"/src/Actors/Enemy/Sniper.gd}]_global_script_class_icons"={
+"Actor": "",
+"Bomber": "",
+"Dasher": "",
+"Enemy": "",
+"Player": "",
+"Sniper": ""
+}

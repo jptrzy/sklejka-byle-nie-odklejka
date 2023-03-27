@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://alagard.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://src/UI/SettingsMenu.gd" type="Script" id=2]
@@ -13,6 +13,25 @@ font_data = ExtResource( 3 )
 size = 60
 outline_color = Color( 0.427451, 0, 0, 1 )
 font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.607843, 0.607843, 0.607843, 1 )
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.305882, 0.305882, 0.305882, 1 )
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
 
 [node name="SettingsMenu" type="Node2D"]
 script = ExtResource( 2 )
@@ -61,29 +80,71 @@ margin_right = 1024.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_constants/separation = 20
 
 [node name="MarginContainer" type="MarginContainer" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
 margin_right = 1024.0
-
-[node name="Button" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
-margin_top = 4.0
-margin_right = 1024.0
-margin_bottom = 92.0
+margin_bottom = 79.0
+size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_constants/margin_right = 750
+custom_constants/margin_top = 0
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 0
+
+[node name="Play" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer/MarginContainer"]
+margin_right = 274.0
+margin_bottom = 79.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
 text = "Audio"
 
-[node name="Button2" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
-margin_top = 96.0
+[node name="MarginContainer2" type="MarginContainer" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 99.0
 margin_right = 1024.0
-margin_bottom = 185.0
+margin_bottom = 178.0
+size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_constants/margin_right = 750
+custom_constants/margin_top = 0
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 0
+
+[node name="Credits" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer/MarginContainer2"]
+margin_right = 274.0
+margin_bottom = 79.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
 text = "Video"
 
-[node name="Button3" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
-margin_top = 189.0
+[node name="MarginContainer3" type="MarginContainer" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 198.0
 margin_right = 1024.0
 margin_bottom = 278.0
+size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Huj"
+custom_constants/margin_right = 750
+custom_constants/margin_top = 0
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 0
+
+[node name="Quit" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/VBoxContainer/MarginContainer3"]
+margin_right = 274.0
+margin_bottom = 80.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "Rzygus"
 
 [connection signal="pressed" from="ColorRect/MarginContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
